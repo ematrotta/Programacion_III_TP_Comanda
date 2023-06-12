@@ -1,0 +1,626 @@
+{
+	"info": {
+		"_postman_id": "3e2106dd-ae2e-4587-9789-0fabb9fdb0d3",
+		"name": "Trabajo Práctico - La comanda",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26594393"
+	},
+	"item": [
+		{
+			"name": "Usuario",
+			"item": [
+				{
+					"name": "CargarUsuario",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "nombre",
+									"value": "Luciano",
+									"type": "text"
+								},
+								{
+									"key": "user",
+									"value": "ltrotta",
+									"type": "text"
+								},
+								{
+									"key": "sector",
+									"value": "cerveza",
+									"type": "text"
+								},
+								{
+									"key": "tipo",
+									"value": "cervecero",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "luciano123",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/Trabajo Práctico - Comanda/usuarios",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"Trabajo Práctico - Comanda",
+								"usuarios"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ObtenerUsuario",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/Trabajo Práctico - Comanda/usuarios/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"Trabajo Práctico - Comanda",
+								"usuarios",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ModificarUsuario",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "nombre",
+									"value": "Tatiana",
+									"type": "text"
+								},
+								{
+									"key": "user",
+									"value": "tlagorio",
+									"type": "text"
+								},
+								{
+									"key": "sector",
+									"value": "bar",
+									"type": "text"
+								},
+								{
+									"key": "tipo",
+									"value": "bartender",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "tatiana123",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/Trabajo Práctico - Comanda/usuarios/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"Trabajo Práctico - Comanda",
+								"usuarios",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ObtenerUsuarios",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/Trabajo Práctico - Comanda/usuarios/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"Trabajo Práctico - Comanda",
+								"usuarios",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "BorrarUsuario",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/Trabajo Práctico - Comanda/usuarios/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"Trabajo Práctico - Comanda",
+								"usuarios",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Pedido",
+			"item": [
+				{
+					"name": "CargarPedido",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "idComanda",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "nombreEmpleado",
+									"value": "Tatiana",
+									"type": "text"
+								},
+								{
+									"key": "nombreProducto",
+									"value": "Campari",
+									"type": "text"
+								},
+								{
+									"key": "cantidad",
+									"value": "2",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/Trabajo Práctico - Comanda/pedidos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"Trabajo Práctico - Comanda",
+								"pedidos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ObtenerPedido",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/Trabajo Práctico - Comanda/pedidos/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"Trabajo Práctico - Comanda",
+								"pedidos",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ModificarPedido",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "nombreProducto",
+									"value": "Tatiana",
+									"type": "text"
+								},
+								{
+									"key": "nombreEmpleado",
+									"value": "tlagorio",
+									"type": "text"
+								},
+								{
+									"key": "cantidad",
+									"value": "bar",
+									"type": "text"
+								},
+								{
+									"key": "estado",
+									"value": "bartender",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/Trabajo Práctico - Comanda/pedidos/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"Trabajo Práctico - Comanda",
+								"pedidos",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ObtenerPedidos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/Trabajo Práctico - Comanda/pedidos/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"Trabajo Práctico - Comanda",
+								"pedidos",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "BorrarPedido",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/Trabajo Práctico - Comanda/pedidos/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"Trabajo Práctico - Comanda",
+								"pedidos",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Comanda",
+			"item": [
+				{
+					"name": "CargarComanda",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "idMesa",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "nombreEmpleado",
+									"value": "Tatiana",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/Trabajo Práctico - Comanda/pedidos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"Trabajo Práctico - Comanda",
+								"pedidos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ObtenerComanda",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/Trabajo Práctico - Comanda/comandas/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"Trabajo Práctico - Comanda",
+								"comandas",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ModificarComanda",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "nombreMozo",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "idMesa",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/Trabajo Práctico - Comanda/comandas/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"Trabajo Práctico - Comanda",
+								"comandas",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ObtenerPedidos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/Trabajo Práctico - Comanda/comandas/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"Trabajo Práctico - Comanda",
+								"comandas",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "BorrarPedido",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/Trabajo Práctico - Comanda/comandas/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"Trabajo Práctico - Comanda",
+								"comandas",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Producto",
+			"item": [
+				{
+					"name": "CargarProducto",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "titulo",
+									"value": "Gancia",
+									"type": "text"
+								},
+								{
+									"key": "tiempoPreparacion",
+									"value": "10",
+									"type": "text"
+								},
+								{
+									"key": "sector",
+									"value": "bar",
+									"type": "text"
+								},
+								{
+									"key": "estado",
+									"value": "activo",
+									"type": "text"
+								},
+								{
+									"key": "precio",
+									"value": "170.453",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/Trabajo Práctico - Comanda/productos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"Trabajo Práctico - Comanda",
+								"productos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ObtenerProducto",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/Trabajo Práctico - Comanda/productos/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"Trabajo Práctico - Comanda",
+								"productos",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ModificarProducto",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "titulo",
+									"value": "Campari",
+									"type": "text"
+								},
+								{
+									"key": "tiempoPreparacion",
+									"value": "15",
+									"type": "text"
+								},
+								{
+									"key": "precio",
+									"value": "200.30",
+									"type": "text"
+								},
+								{
+									"key": "estado",
+									"value": "activo",
+									"type": "text"
+								},
+								{
+									"key": "sector",
+									"value": "bar",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/Trabajo Práctico - Comanda/productos/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"Trabajo Práctico - Comanda",
+								"productos",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ObtenerProductos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/Trabajo Práctico - Comanda/productos/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"Trabajo Práctico - Comanda",
+								"productos",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "BorrarProducto",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/Trabajo Práctico - Comanda/productos/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"Trabajo Práctico - Comanda",
+								"productos",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
